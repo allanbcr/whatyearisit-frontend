@@ -1,5 +1,5 @@
 function displayDate() {
-  fetch("https://whatyearisit-backend-theta-three.vercel.app/year")
+  fetch("https://whatyearisit-backend-theta-three.vercel.app/")
     .then((response) => response.json())
     .then((data) => {
       console.log(data);
