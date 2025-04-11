@@ -1,9 +1,9 @@
 function displayDate() {
-  fetch("http://localhost:3000/year")
+  fetch("https://whatyearisit-backend-theta-three.vercel.app/year")
     .then((response) => response.json())
-    .then((datatoto) => {
-      console.log(datatoto);
-      document.querySelector("#year").textContent = datatoto.year
+    .then((data) => {
+      console.log(data);
+      document.querySelector("#year").textContent = data.year;
     });
 }
 
